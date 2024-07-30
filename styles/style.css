@@ -1,0 +1,94 @@
+.button-container {
+    display: flex;
+    background-color: rgba(1, 154, 255, 0.8); /* cor de fundo com transparência */
+    width: 100%;
+    max-width: 600px; /* ajuste conforme necessário */
+    height: 60px; /* altura ajustável conforme seu design */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35),
+                5px 10px 15px rgba(47, 113, 255, 0.5);
+    margin: 20px auto; /* centraliza o container horizontalmente */
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 60px; /* tamanho do botão */
+    height: 60px; /* tamanho do botão */
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 24px; /* tamanho do ícone */
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 28px; /* tamanho do ícone */
+  }
+  
+  .navbar {
+    background-color: rgba(252, 92, 0, 0.849); /* cor de fundo com transparência */
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: rgba(255, 255, 255, 0.8); /* suaviza a cor ao passar o mouse */
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
