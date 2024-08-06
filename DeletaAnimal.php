@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style/style1.css">
 </head>
 <body>
-    <h1>Deletar Cidade</h1>
+    <h1>Deletar Animal</h1>
     <?php
         include('includes/conexao.php');
         $id = $_GET['id'];
         $sql = "DELETE
-                FROM cliente
+                FROM animal
                 WHERE id = $id";
         $result = mysqli_query($con,$sql);
         if($result){
@@ -23,6 +23,6 @@
             echo "<h2>".mysqli_error($con)."</h2>";
         }
     ?>
-    <a href="ListarCliente.php">Voltar</a>
+    <a href="ListarAnimal.php">Voltar</a>
 </body>
 </html>

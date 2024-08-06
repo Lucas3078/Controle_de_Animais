@@ -1,94 +1,188 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(252, 92, 0, 0.849);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-icon {
+    font-size: 36px;
+    color: #fff;
+}
+
+.logo-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
 .button-container {
     display: flex;
-    background-color: rgba(1, 154, 255, 0.8); /* cor de fundo com transparência */
+    flex-wrap: wrap;
+    background-color: rgba(1, 154, 255, 0.8);
     width: 100%;
-    max-width: 600px; /* ajuste conforme necessário */
-    height: 60px; /* altura ajustável conforme seu design */
+    max-width: 900px;
+    height: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35),
                 5px 10px 15px rgba(47, 113, 255, 0.5);
-    margin: 20px auto; /* centraliza o container horizontalmente */
-  }
-  
-  .button {
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+.button {
     outline: 0 !important;
     border: 0 !important;
-    width: 60px; /* tamanho do botão */
-    height: 60px; /* tamanho do botão */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: transparent;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
-    font-size: 24px; /* tamanho do ícone */
-  }
-  
-  .button:hover {
-    transform: translateY(-3px);
-  }
-  
-  .icon {
-    font-size: 28px; /* tamanho do ícone */
-  }
-  
-  .navbar {
-    background-color: rgba(252, 92, 0, 0.849); /* cor de fundo com transparência */
-    padding: 10px 0;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo {
     font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: rgba(255, 255, 255, 0.8); /* suaviza a cor ao passar o mouse */
-}
-
-.content {
-    max-width: 800px;
-    margin: 40px auto;
     text-align: center;
 }
 
-.content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.button:hover {
+    transform: translateY(-3px);
 }
 
-.content p {
-    font-size: 18px;
-    line-height: 1.6;
+.icon {
+    font-size: 36px;
+}
+
+.button-text {
+    font-size: 14px;
+    margin-top: 8px;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.button:hover .button-text {
+    font-weight: bold;
+}
+
+
+.card1, .card2, .card3, .card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.card2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.twitter {
+  fill: #03A9F4;
+}
+
+.card3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.github {
+  fill: #000;
+}
+
+.card4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.discord {
+  fill: #8c9eff;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.card1:hover {
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
 }

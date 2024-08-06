@@ -56,7 +56,7 @@
         </div><p></p>
 
         <div>
-            <label for="id_pessoa">ID da Pessoa</label>
+            <label for="id_pessoa">ID do Proprietário</label>
             <select name="id_pessoa" id="id_pessoa">
                 <?php
                 include('includes/conexao.php');
@@ -64,7 +64,7 @@
                 $result = mysqli_query($con,$sql);
                 while($row = mysqli_fetch_array($result)){
                     echo "<option value='".$row['id']."'>"
-                         .$row['nome']."/".$row['estado']
+                         .$row['id_pessoa']."/".$row['nome']
                          ."</option>";
                 }
                 ?>

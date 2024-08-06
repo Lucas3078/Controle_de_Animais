@@ -31,7 +31,7 @@
             echo mysqli_error($con);
         }
     ?>
-    <h3><a href="ListarCliente.php">Ver na Tabela</a></h3>
-    <h3><a href="CadastroCliente.php">Voltar</a></h3>
+    <h3><a href="ListarPessoa.php">Ver na Tabela</a></h3>
+    <h3><a href="CadastroPessoa.php">Voltar</a></h3>
 </body>
 </html>

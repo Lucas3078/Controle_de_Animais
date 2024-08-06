@@ -17,7 +17,7 @@
 <body>
     <form action="AlteraCidadeExe.php" method="post">
     <fieldset>
-        <legend>Cadastro de Cidades</legend>
+        <legend>Cadastro de Cidade</legend>
         <div>
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome"

@@ -22,8 +22,18 @@
         </div><p></p>
 
         <div>
-            <label for="senha">Senha: </label>
-            <input type="password" name="senha" id="senha">
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco">
+        </div>
+
+        <div>
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+
+        <div>
+            <label for="cep">CEP: </label>
+            <input type="number" name="cep" id="cep">
         </div>
 
         <div>

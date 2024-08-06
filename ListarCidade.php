@@ -19,7 +19,7 @@
     <div class="container">
         <h1>Consulta de Cidades</h1>
         <a href="CadastroCidade.html">Cadastrar nova Cidade</a><br>
-        <a href="inicial.html">Voltar para a Tela Inicial</a>
+        <a href="index.html">Voltar para a Tela Inicial</a>
 
         <table class="city-table">
             <tr>
